@@ -1,0 +1,215 @@
+
+  .head1 {
+    background-color: #ff5f5f; /* Pastel red */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: GoodDog Cool;
+  }
+  button {
+    background-color: #faa4b7; /* Light pastel orange */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.2s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #e24a7d; /* Darker pastel orange on hover */
+    transform: scale(1.05);
+  }
+  form {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  input[type="text"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+
+  input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #aaa;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  input[type="checkbox"]:checked,
+  input[type="radio"]:checked {
+    background-color: #ff5f5f; /* Pastel red */
+    border-color: #e24a7d;
+  }
+        
+  button {
+    /* Existing styles */
+    font-family: gooddog;
+    background-color: #faa4b7; /* Pastel red */
+    box-shadow: #f53ba1;
+    color: rgb(12, 0, 0);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  button:hover {
+    background-color: #e24a7d; /* Darker pastel red on hover */
+    transform: scale(1.05);
+  }
+
+ h3{
+    font-size:50px;
+ }
+ #main{
+    font-family:GoodDog;
+    color: #050003;
+    font-size: 32px;
+    font-weight:normal;
+    font-style:normal;
+    font-variant:normal;
+    letter-spacing:1.4px;
+    word-spacing:4px;
+ }
+ #eat{
+   font-family:GoodDog;
+   color: #050003;
+   font-size: 32px;
+   font-weight:normal;
+   font-style:normal;
+   font-variant:normal;
+   letter-spacing:1.4px;
+   word-spacing:4px;
+ }
+ #hot{
+   font-family:GoodDog;
+   color: #050003;
+   font-size: 32px;
+   font-weight:normal;
+   font-style:normal;
+   font-variant:normal;
+   letter-spacing:1.4px;
+   word-spacing:4px;
+ }
+ #option{
+    font-family:GoodDog;
+    color: #050003;
+    font-size: 20px;
+    font-weight:normal;
+    font-style:normal;
+    font-variant:normal;
+    letter-spacing:1.4px;
+    word-spacing:4px;
+    border-width:2px;
+    border-color: black;
+    border-radius:1em ;
+ }
+ #eatsnack{
+   font-family:GoodDog;
+   color: #050003;
+   font-size: 20px;
+   font-weight:normal;
+   font-style:normal;
+   font-variant:normal;
+   letter-spacing:1.4px;
+   word-spacing:4px;
+   border-width:2px;
+   border-color: black;
+   border-radius:1em ;
+ }
+ #hotdrink{
+   font-family:GoodDog;
+   color: #050003;
+   font-size: 20px;
+   font-weight:normal;
+   font-style:normal;
+   font-variant:normal;
+   letter-spacing:1.4px;
+   word-spacing:4px;
+   border-width:2px;
+   border-color: black;
+   border-radius:1em ;
+ }
+ .hot{
+   font-family:GoodDog;
+   color: #050003;
+   font-size: 20px;
+   font-weight:normal;
+   font-style:normal;
+   font-variant:normal;
+   letter-spacing:1.4px;
+   word-spacing:4px;
+   border-width:2px;
+   border-color: black;
+   border-radius:1em ;
+   box-align: right;
+ }
+ input[type="radio"] {
+    background-color: #98d6e9; /* Default background color */
+    border-color: #c1f505;
+    border-width: 1px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #e603ad;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  input[type="radio"]:checked {
+    background-color: #fa0606; /* Updated background color when checked */
+    border-color: #400c94;
+  }
+  
+  input[type="radio"]:hover {
+    box-shadow: 0px 0px 10px #02ec35;
+    transform: scale(1.05);
+  }
+  input[type='radio']:after {
+    width: 13px;
+    height: 13px;
+    border-radius: 15px;
+    top: -2px;
+    left: -4px;
+    position: relative;
+    background-color: #01f801;
+  
+    content: '';
+    display:inline-block;
+    visibility: visible;
+    border: 2px solid rgb(250, 1, 1);
+  }
+  
+  input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -4px;
+    position: relative;
+    background-color: #ffa500;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid rgb(255, 0, 191);
+  }
+  #sticker{
+    font-family:GoodDog Bones !important;
+ }

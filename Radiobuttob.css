@@ -1,0 +1,325 @@
+
+body {
+  font-family: gooddog;
+  background-color: #faf9f9; /* Light pastel pink */
+  margin: 0;
+  padding: 0;
+}
+/* Add borders to both left and right sides of the page */
+
+
+header {
+  font-family: gooddog;
+  background-color: #a2c9f7; /* Light pastel red */
+  box-shadow: #2e6081;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: gooddog;
+  color: #020000; /* Pastel red */
+}
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 6px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+.container {
+  font-family: gooddog;
+  
+  display: flex;
+  justify-content: space-around;
+  flex-wrap:wrap;
+ 
+}
+
+.product-card {
+  background-color: #faa4b7; /* Light pastel orange */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0.3, 0.3);
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+}
+.product-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color:   #a2c9f7; /* Light pastel red */
+  text-align: center;
+  padding: 20px;
+}
+.product-card {
+  /* Existing styles */
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+.Head1{
+   font-family:GoodDog Cool;
+   color: #080003;
+   font-size: 70px; 
+   transform: scale(0.6,1.5);
+   text-align:center;
+   font-weight:normal;
+   font-style:normal;
+   font-variant:normal;
+   letter-spacing:1.4px;
+   word-spacing: 0.5em;
+   text-transform:capitalize;
+   text-indent:none;
+   white-space:normal;
+   text-decoration:none;
+}
+body
+{
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #cdcdcd;
+  font-family:gooddog;
+}
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the "Add to Cart" buttons */
+button {
+  background-color: #ff5f5f; /* Pastel red */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #e24a7d; /* Darker pastel red on hover */
+  transform: scale(1.05);
+}
+
+/* Style the footer */
+footer {
+  background-color: #ff9a8b; /* Light pastel orange */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+}
+/* Add borders to both left and right sides of the page */
+.container {
+  font-family: gooddog;
+  background-color: #f3dede; /* Light pastel pink */
+  margin: 0;
+  padding: 0;
+  border-left: 5px solid #ff9a8b;
+  border-right: 5px solid #ff9a8b;
+  position: relative; /* Ensure proper stacking context */
+}
+
+header {
+  font-family: gooddog;
+  background-color: #f89788; /* Light pastel orange */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 0;
+  box-sizing: border-box;
+  z-index: 2; /* Make sure it's above the menu bar */
+}
+#cart-box {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  z-index: 100;
+  display: block;
+}
+
+#close-cart-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.cart-item-image {
+  width: 50px;
+  height: 50px;
+}
+
+.cart-item-info {
+  margin-left: 10px;
+}
+
+.cart-item-name {
+  font-size: 16px;
+}
+
+.cart-item-price {
+  font-size: 14px;
+
+}
